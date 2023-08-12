@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-//import GalleryList from GalleryList.jsx;
+import GalleryList from '../GalleryList/GalleryList.jsx';
 
 function App() {
 
@@ -30,18 +30,16 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Louie</h1>
       </header>
-      <>
-        {galleryList?.map(galleryItems => (
+      <h2>He is the Louiest!</h2>
+      <GalleryList
+        galleryList={galleryList}
+      />
 
-
-          <img src={galleryItems.path} />
-
-
-        ))}
-      </>
 
     </div >
   );
 }
 
 export default App;
+
+

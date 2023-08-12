@@ -3,7 +3,7 @@ PLAN FOR WEEKEND CHALLEGENE #4 - REACT GALLERY
 
 Check instructions carefully and repeatedly!
 
-Make sure all dependencies are installed and hooked in where they need to be {}
+Make sure all dependencies are installed and hooked in where they need to be {x}
     
     - 'npm install nodemon --global' {x}
     - 'npm uninstall axios' then 'npm install axios' if it is not the latest version {x}
@@ -14,12 +14,12 @@ Make sure all dependencies are installed and hooked in where they need to be {}
 Test premade GET and PUT routes in Postman (DO NOT MODIFY gallery.router.js!) {}
     
     - Double check to make sure, but POST and DELETE don't appear to be 
-    necessary for base mode {}
+    necessary for base mode {x}
 
 NO DATABASE (or pool)! - Think of some images you would like to use for this project! {}
     
-    - Images should be stored in images file in public {}
-    - Data for images is stored as {id:,path:,description:,likes:} in gallery.data.js {} -> exports galleryItems -> to gallery.router.js -> should go to GalleryItem.jsx via GET from router to client App.jsx {}
+    - Images should be stored in images file in public {x}
+    - Data for images is stored as {id:,path:,description:,likes:} in gallery.data.js {} -> exports galleryItems -> to gallery.router.js -> should go to GalleryItem.jsx via GET from router to client App.jsx {x}
     
 COMPONENTS - make folders and files {}
     
