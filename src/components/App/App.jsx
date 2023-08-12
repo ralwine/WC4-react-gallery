@@ -32,11 +32,11 @@ function App() {
       </header>
       <>
         {galleryList?.map(galleryItems => (
-          <li key={galleryItems.id}>
-            {galleryItems.path} 
-            {galleryItems.description} 
-            {galleryItems.likes}
-          </li>
+
+
+          <img src={galleryItems.path} />
+
+
         ))}
       </>
 

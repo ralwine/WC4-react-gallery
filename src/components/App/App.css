@@ -1,11 +1,12 @@
 .App {
+  background-color: aquamarine;
   text-align: center;
 }
 
 .App-header {
   background-color: #222;
   padding: 1em;
-  color: white;
+  color: goldenrod;
   margin-bottom: 1em;
 }
 
