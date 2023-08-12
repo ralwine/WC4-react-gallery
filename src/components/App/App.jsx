@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
+//import GalleryList from GalleryList.jsx;
+
 function App() {
 
-  let [GalleryList, setGalleryList] = useState([]);
+  let [galleryList, setGalleryList] = useState([]);
 
   useEffect(() => {
     getGallery();
@@ -29,13 +31,16 @@ function App() {
         <h1 className="App-title">Gallery of My Louie</h1>
       </header>
       <>
-        {GalleryList?.map(galleryItems => (
-          <li key={galleryItems.data}>
-            {galleryItems}
+        {galleryList?.map(galleryItems => (
+          <li key={galleryItems.id}>
+            {galleryItems.path} 
+            {galleryItems.description} 
+            {galleryItems.likes}
           </li>
         ))}
       </>
-    </div>
+
+    </div >
   );
 }
 
