@@ -1,18 +1,16 @@
-// import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+//import galleryItems from '../../../server/modules/gallery.data.js';
+import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
-function GalleryList({galleryList}) {
+function GalleryList(props) {
+    console.log('hey in list!', props)
     return (
         <>
-            
-
-            {galleryList?.map(galleryItems => (
-
-
-                <img src={galleryItems.path} />
-
-
-            ))}
-        </>);
+            {props.galleryList.map((galleryList) =>{
+                return <GalleryItem key={galleryList.id} galleryItems={galleryList} />
+            })} 
+        </>
+    )
 }
 
 export default GalleryList;
+

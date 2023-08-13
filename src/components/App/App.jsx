@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 import GalleryList from '../GalleryList/GalleryList.jsx';
+//import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
 
   useEffect(() => {
     getGallery();
-  })
+  },[])
 
   // GET in here!
   const getGallery = () => {
@@ -32,8 +33,9 @@ function App() {
       </header>
       <h2>He is the Louiest!</h2>
       <GalleryList
-        galleryList={galleryList}
-      />
+        galleryList={galleryList} />
+
+
 
 
     </div >
