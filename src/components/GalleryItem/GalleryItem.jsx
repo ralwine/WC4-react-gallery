@@ -13,11 +13,12 @@ function GalleryItem(props) {
 
     const likeClick = () =>{
         console.log('Liked')
+        //axios.put('gallery/likes/')
     }
     return (
-        <div className="louieImages">
-            <img onClick={imageClick} src={props.galleryItems.path} />
-            {imgDesc && <p>{props.galleryItems.description}</p>}
+        <div className="louieImages" onClick={imageClick}>
+            
+            {imgDesc ? <p>{props.galleryItems.description} </p> : <img src={props.galleryItems.path}/>}
             <button onClick={likeClick}>Like🤙</button>
         </div>
     );
