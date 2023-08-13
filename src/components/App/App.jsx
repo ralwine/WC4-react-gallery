@@ -4,7 +4,7 @@ import './App.css';
 
 import GalleryList from '../GalleryList/GalleryList.jsx';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
-//import galleryItems from '../../../server/modules/gallery.data';
+
 
 function App() {
 
@@ -37,9 +37,6 @@ function App() {
       <GalleryList
         galleryList={galleryList} />
       
-
-
-
     </div >
   );
 }
