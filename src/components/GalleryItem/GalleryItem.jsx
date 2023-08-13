@@ -11,16 +11,22 @@ function GalleryItem(props) {
     }
     // now how do we get this image to change state?
 
-    const likeClick = () =>{
+    const likeClick = () => {
         console.log('Liked')
         //axios.put('gallery/likes/')
     }
     return (
-        <div className="louieImages" onClick={imageClick}>
-            
-            {imgDesc ? <p>{props.galleryItems.description} </p> : <img src={props.galleryItems.path}/>}
-            <button onClick={likeClick}>Like🤙</button>
-        </div>
+        <>
+            <div className="louieImages" onClick={imageClick}>
+
+                {imgDesc ? <p>{props.galleryItems.description} </p> : <img src={props.galleryItems.path} />}
+
+            </div>
+            <div>
+                <button onClick={likeClick}>Like🤙</button>
+                <p id="likes">{0} Non-haters!</p>
+            </div>
+        </>
     );
 
 }

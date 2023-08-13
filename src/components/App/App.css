@@ -15,11 +15,23 @@
 }
 
 .louieImages img {
+  display: inline-block;
   width: 200px;
   height: 300px;
+  border: solid black;
 }
 
 .louieImages p {
+  display: inline-block;
+  background-color: gold;
+  width: 200px;
+  height: 300px;
+  border: solid;
+  font-family: cursive;
   font-size: 1.2rem;
   margin-top: 1rem;
+}
+
+#likes{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
