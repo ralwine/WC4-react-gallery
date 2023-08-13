@@ -3,7 +3,8 @@ import axios from 'axios';
 import './App.css';
 
 import GalleryList from '../GalleryList/GalleryList.jsx';
-//import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+//import galleryItems from '../../../server/modules/gallery.data';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
 
   useEffect(() => {
     getGallery();
-  },[])
+  },[]) 
+  // ^ to avoid infinite console.logs in the future, use '[]'!
 
   // GET in here!
   const getGallery = () => {
@@ -34,7 +36,7 @@ function App() {
       <h2>He is the Louiest!</h2>
       <GalleryList
         galleryList={galleryList} />
-
+      
 
 
 
