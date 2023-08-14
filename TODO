@@ -16,16 +16,16 @@ Test premade GET and PUT routes in Postman (DO NOT MODIFY gallery.router.js!) {}
     - Double check to make sure, but POST and DELETE don't appear to be 
     necessary for base mode {x}
 
-NO DATABASE (or pool)! - Think of some images you would like to use for this project! {}
+NO DATABASE (or pool)! - Think of some images you would like to use for this project! {x}
     
     - Images should be stored in images file in public {x}
     - Data for images is stored as {id:,path:,description:,likes:} in gallery.data.js {} -> exports galleryItems -> to gallery.router.js -> should go to GalleryItem.jsx via GET from router to client App.jsx {x}
     
-COMPONENTS - make folders and files {}
+COMPONENTS - make folders and files {x}
     
-    - 'GalleryList' -> GalleryList.jsx should take the data from gallery.data.js, loop over it and convert into individual GalleryItem(s) {}
-    - 'GalleryItem' -> 'GalleryItem.jsx' should take in an individual GalleryItem. GalleryList.jsx should use the GalleryItem.jsx component to display an image. {}
-    - Read up on conditional rendering before doing anymore {}
-    - PUT:
+    - 'GalleryList' -> GalleryList.jsx should take the data from gallery.data.js, loop over it and convert into individual GalleryItem(s) {x}
+    - 'GalleryItem' -> 'GalleryItem.jsx' should take in an individual GalleryItem. GalleryList.jsx should use the GalleryItem.jsx component to display an image. {x}
+    - Read up on conditional rendering before doing anymore {x}
+    - PUT: 
 
 

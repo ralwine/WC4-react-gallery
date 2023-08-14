@@ -4,11 +4,11 @@ import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 function GalleryList(props) {
     console.log('hey in list!', props)
     return (
-        <>
+        <div className="GalleryList">
             {props.galleryList.map((galleryList) =>{
                 return <GalleryItem key={galleryList.id} galleryItems={galleryList} />
             })} 
-        </>
+        </div>
     )
 }
 

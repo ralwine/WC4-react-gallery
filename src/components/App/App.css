@@ -1,4 +1,5 @@
 .App {
+ 
   background-color: aquamarine;
   text-align: center;
 }
@@ -15,14 +16,15 @@
 }
 
 .louieImages img {
-  display: inline-block;
+  
   width: 200px;
   height: 300px;
   border: solid black;
+  margin-top: 1rem;
 }
 
 .louieImages p {
-  display: inline-block;
+  
   background-color: gold;
   width: 200px;
   height: 300px;
@@ -34,4 +36,8 @@
 
 #likes{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.GalleryList{
+  display: inline-block;
 }
