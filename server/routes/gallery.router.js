@@ -6,13 +6,16 @@ const galleryItems = require('../modules/gallery.data');
 
 // PUT Route
 router.put('/like/:id', (req, res) => {
-    console.log(req.params);
+    console.log("in server router", req.params);
     const galleryId = req.params.id;
+    console.log("galleryItems", galleryItems)
     for(const galleryItem of galleryItems) {
         if(galleryItem.id == galleryId) {
             galleryItem.likes += 1;
+            console.log(galleryItem.likes)
         }
     }
+    console.log("galleryItems.likes", galleryItems)
     res.sendStatus(200);
 }); // END PUT Route
 

@@ -28,6 +28,21 @@ function App() {
       })
   }
 
+  function likeClick(id) {
+    console.log('Like!', id)
+    axios.put(`/gallery/like/${id}`)
+    .then((response)=>{
+        console.log('response in client PUT', response)
+        getGallery();
+    })
+    .catch((error)=>{
+        alert ('NO LIKING RIGHT NOW')
+        console.log('error in client side PUT', error)
+    })
+}
+
+
+
   
   return (
     <div className="App">
@@ -36,7 +51,7 @@ function App() {
       </header>
       <h2>He is the Louiest!</h2>
       <GalleryList
-        galleryList={galleryList} />
+        galleryList={galleryList} getGallery={getGallery} likeClick={likeClick}/>
       
     </div >
   );
